@@ -1,7 +1,7 @@
 # My Project Title: Police_Post_Logs
    
 what are the libraries i used to complete my project:
-      1.PANDAS
+      1.PANDAS 
       2.SQLALCHEMY 
       3.PSYCOPG2
       4.STREAMLIT
