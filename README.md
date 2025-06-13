@@ -67,6 +67,7 @@ data = pd.read_csv("path/to/file.csv")
 ```python
 data.isnull().sum()
 data.duplicated().sum()
+df.info()
 df = data.copy()
 ```
 
