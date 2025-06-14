@@ -84,16 +84,16 @@ df = data.copy()
 ```python
 from sqlalchemy import create_engine
 
-username = "yourUsername"
-password = "yourPass"
-host = "yourHost"
+username = "Username"
+password = "password"
+host = "Host"
 port = 5432
-database = "yourDatabase"
+database = "Database"
 
 engine = create_engine(f"postgresql://{username}:{password}@{host}:{port}/{database}")
 connection = engine.connect()
 
-df.to_sql("your_table_name", connection, if_exists='replace', index=False)
+df.to_sql("table_name", connection, if_exists='replace', index=False)
 ```
 
 ---
@@ -111,15 +111,15 @@ df.to_sql("your_table_name", connection, if_exists='replace', index=False)
 import psycopg2
 
 connection = psycopg2.connect(
-    host='yourHost',
-    port='yourPort',
-    database='yourDatabase',
-    user='yourUsername',
-    password='yourPass'
+    host='Host',
+    port='Port',
+    database='Database',
+    user='Username',
+    password='Password'
 )
 
 mediator = connection.cursor()
-mediator.execute("SELECT * FROM your_table")
+mediator.execute("SELECT * FROM table")
 result = mediator.fetchall()
 ```
 
@@ -140,7 +140,7 @@ result = mediator.fetchall()
 streamlit run policelog.py
 ```
 
-Open [http://localhost:8501](http://localhost:8501) in your browser.
+Open [http://localhost:8501](http://localhost:8501) in browser.
 
 ---
 
